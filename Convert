@@ -1,0 +1,8 @@
+def convert(s): 
+    b = "" 
+    for x in s: 
+    b+= x 
+    return b 
+ 
+s = ['a', 'b', 'c', 'd', 'e', 'f", 'g', 'h', 'i', 'j'] 
+print(convert(s)) 
