@@ -1,0 +1,88 @@
+x1=int(input("ENTER THE NUMERATOR FRO FRACTION 1:"))
+x2=int(input("ENTWR THE DENOMINATOR FOR FRACTION 1:"))
+y1=int(input("ENTER THE NUMERATOR FOR FRACTION 2:"))
+y2=int(input("ENTWR THE DENOMINATOR FOR FRACTION 2:"))
+def fractadd(x1,x2,y1,y2):
+    if x2==y2:
+        num=x1+y1
+        deno=x2
+    else:
+        num=x1*y2+y1*x2
+        deno=x2*y2
+    return num,deno
+num,deno=fractadd(x1,x2,y1,y2)
+print ("addintion of fractuions is:",num,"/",deno)
+ 
+
+f1=(3,2)
+f2=(3,4)
+def fractadd(f1,f2):
+    if f1[1]==f2[1]:
+        num=f1[0]+f2[0]
+        deno=f1[1]
+    else:
+        num=f1[0]*f2[1]+f2[0]*f1[1]
+        deno=f1[1]*f2[1]
+    return num,deno
+num,deno=fractadd(f1,f2)
+print ("addintion of fractuions is:",num,"/",deno)
+
+
+f1=[3,2]
+f2=[3,4]
+def fractadd(f1,f2):
+    if f1[1]==f2[1]:
+        num=f1[0]+f2[0]
+        deno=f1[1]
+    else:
+        num=f1[0]*f2[1]+f2[0]*f1[1]
+        deno=f1[1]*f2[1]
+    return num,deno
+num,deno=fractadd(f1,f2)
+print ("addintion of fractuions is:",num,"/",deno)
+ 
+ 
+ f1= {
+    "num":3,
+    "deno":2
+    }
+f2= {
+    "num":3,
+    "deno":4
+    }
+def fractadd(f1,f2):
+    if f1["deno"]==f2["deno"]:
+        num=f1["num"]+f2["num"]
+        deno=f1[1]
+    else:
+        num=f1["num"]*f2["deno"]+f2["num"]*f1["deno"]
+        deno=f1["deno"]*f2["deno"]
+        return num,deno
+num,deno=fractadd(f1,f2)
+print ("addintion of fractuions is:",num,"/",deno)
+
+
+class fract:
+    def __init__(self,n,d):
+     self.num=n
+     self.deno=d
+f1 = fract(3,2)
+f2 = fract(3,4)
+def fractadd(fr1,fr2):
+    if fr1.deno==fr2.deno:
+        num=fr1.num+fr2.num
+        deno=fr1.deno
+    else:
+        num=fr1.num*fr2.deno+fr2.num*fr1.deno
+        deno=fr1.deno*fr2.deno
+        return num,deno
+num,deno=fractadd(f1,f2)
+print ("addintion of fractuions is:",num,"/",deno)
+
+
+def fract():
+    from fractions import Fraction
+    return Fraction(3,2)+Fraction(3,4)
+
+f=fract()
+print(f)
