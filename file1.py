@@ -1,0 +1,7 @@
+file_obj = open ("C:\\Users\\hp\\Desktop\\sample.txt")
+print("file name:",file_obj.name)
+print("file state:",file_obj.closed)
+print("opening mode:",file_obj.mode)
+print(file_obj.read())
+file_obj.close()
+print("file state:",file_obj.closed)
